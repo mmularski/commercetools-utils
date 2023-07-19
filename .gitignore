@@ -1,0 +1,11 @@
+node_modules
+dist
+
+.vscode
+.history
+
+config.json
+
+*log*.txt
+
+*.env

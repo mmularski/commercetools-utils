@@ -1,0 +1,49 @@
+{
+  "name": "commercetools-utils",
+  "version": "0.0.1",
+  "description": "CLI tool for some Commercetools actions",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "prestart": "yarn install && yarn build",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@commercetools/platform-sdk": "^4.7.0",
+    "@faker-js/faker": "^7.6.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^10.0.1",
+    "dotenv": "^16.0.3",
+    "env-var": "^7.3.0",
+    "inquirer": "^8",
+    "p-retry": "^4",
+    "p-all": "^3",
+    "p-map": "^4",
+    "boxen": "^5"
+  },
+  "devDependencies": {
+    "@commander-js/extra-typings": "^10.0.3",
+    "@commercetools/sdk-client-v2": "^2.1.5",
+    "@types/cli-progress": "^3.11.0",
+    "@types/inquirer": "^9.0.3",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.15.12",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "esbuild-node-externals": "^1.4.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
